@@ -14,6 +14,13 @@
    - The working directory when the command was run the `home` directory
    - _______________________________
    - The output is not an error
+4. `cd` (with a path to a directory as an argument)
+   ![Image](cd_directory_path.png)
+   - The working directory when the command was run was the `home` directory
+   - The command `cd lecture1/` successfully changed the working directory to `lecture1`
+   - The output is not an error
+
+
 
 
 
