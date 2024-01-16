@@ -39,7 +39,14 @@
    - The working directory when the command was run was the `lecture1` directory
    - The command `cd messages/fr.txt` results in a message stating that the provided argument file is not a directory
    - The output is an error since the command `cd` only works with directories, as it is a command that stands for "change directory". Thus it fails to work when the argument is a file path.
-     
+  
+8. `ls` (with a path to a file as an argument)
+   [Image](ls_file_path.png)
+   - The working directory when the command was run was the `lecture1` directory
+   - The command `ls messages/fr.txt` results in it simply stating the file path itself, since files contain nothing further than themselves while directories can contain files and even other directories within themselves.
+   - The output is not an error
+
+
 
 
 
