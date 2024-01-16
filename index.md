@@ -28,6 +28,13 @@
    - The command `ls messages/` simply listed the contents of the `messages` directory, which were the following files: `en-us.txt`, `es-mx.txt`, `fr.txt`, and `zh-cn.txt`
    - The output is not an error
 
+6. `cat` (with a path to a directory as an argument)
+   ![Image](cat_directory_path.png)
+   - The working directory when the command was run was the `lecture1` directory
+   - The command `cat ../` contains a path to the `home` directory as an argument, and it simply results in a message that points out that the given argument is a path to a directory
+   - The output is an error since the `cat` command fails to work when the argument is a directory. It can only display the contents of a file
+
+
 
 
 
