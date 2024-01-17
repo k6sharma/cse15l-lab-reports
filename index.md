@@ -13,7 +13,7 @@
 3. `cat`(no arguments)
    ![Image](cat_no_arguments.png)
    - The working directory when the command was run was the `home` directory
-   - The `cat` command With no arguments takes whatever further input you enter into the terminal and concatenates any subsequent input until you end the input (I did so by pressing `Ctrl+C`). In my case, I kept pressing enter after inputting the `cat` command with no arguments, so it just concatenated empty space with itself.
+   - The `cat` command with no arguments takes whatever further input you enter into the terminal and concatenates any subsequent input until you end the input (I did so by pressing `Ctrl+C`). In my case, I kept pressing enter after inputting the `cat` command with no arguments, so it just concatenated empty space with itself.
    - The output is not an error
      
 4. `cd` (with a path to a directory as an argument)
