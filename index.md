@@ -51,6 +51,20 @@
    - The working directory when the command was run was the `lecture1` directory
    - The command `cat messages/fr.txt` displays the contents of the `fr.txt` file, which in this case is the text `Bonjour le monde!`.
    - The output is not an error
+  
+Using ChatGPT:
+- I entered the following prompt into ChatGPT to understand the workings of the cat command with no arguments: "can you explain why cat with no arguments just returned empty space"
+- Here was its response:
+  "Certainly! When you use the `cat` command without any arguments, it reads from the standard input (usually the keyboard) and immediately writes it to the standard output (usually the terminal). If you don't provide any input and press Enter, it essentially echoes an empty line.
+Here's what happens step by step:
+1. You run the `cat` command without any arguments:
+2. The `cat` command waits for input.
+3. You press Enter without providing any input.
+4. The `cat` command receives an empty line (just the Enter key), and it immediately echoes it back to the standard output.
+So, when you run `cat` without any arguments and just press Enter, it appears as if it returns an empty space because it echoes an empty line to the terminal. It's waiting for your input, and when you don't provide any, it simply outputs an empty line."
+- This furthered my understanding of the cat command, and some further studying and asking questions (I asked my tutor Grace how to end the input cycle, for example, and she was the one who told me to use Ctrl+C) led me to writing the following:
+  "The `cat` command with no arguments takes whatever further input you enter into the terminal and concatenates any subsequent input until you end the input (I did so by pressing `Ctrl+C`). In my case, I kept pressing enter after inputting the `cat` command with no arguments, so it just concatenated empty space with itself."
+  
 
 
 
