@@ -51,6 +51,12 @@
    - The working directory when the command was run was the `lecture1` directory
    - The command `cat messages/fr.txt` displays the contents of the `fr.txt` file, which in this case is the text `Bonjour le monde!`.
    - The output is not an error
+
+
+
+
+
+
   
 Using ChatGPT:
 - I entered the following prompt into ChatGPT to understand the workings of the cat command with no arguments: "can you explain why cat with no arguments just returned empty space"
