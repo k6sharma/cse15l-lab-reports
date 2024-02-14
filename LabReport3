@@ -1,5 +1,6 @@
 Part 1: 
-A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+A failure-inducing input for the buggy program, as a JUnit test and any associated code 
+(write it as a codeblock in Markdown)
 		public class ArrayTests {
   @Test
   public void testReverseInPlace(){
@@ -15,7 +16,8 @@ A failure-inducing input for the buggy program, as a JUnit test and any associat
     assertArrayEquals(new int[]{7, 8, 9},input1);
   }
 }
-An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+An input that doesn't induce a failure, as a JUnit test and any associated code 
+(write it as a code block in Markdown)
 @Test 
 	public void testReverseInPlace() {
     int[] input1 = { 3 };
@@ -110,5 +112,7 @@ Input: find ./Downloads/week1Discussion-main -empty
 Output: No output (because no empty file found)
 
 Used ChatGPT and entered the following:
-“Find 4 interesting command-line options for the find command, and give a couple examples as well”
-Kept regenerating for more options and chose what I thought were the most useful 
+“Find 4 interesting command-line options for the find command, and give a 
+couple examples as well”
+Kept regenerating for more options and chose what I thought were 
+the most useful 
