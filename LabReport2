@@ -43,5 +43,7 @@ Part 2:
 ![Image](keygen.png)
 
 Part 3:
-I learned that a web browser isn’t the only way to access web URLs - the curl command can be used for this as well. We can do this by running the `curl` command with the URL as its argument from the terminal. 
+I learned that a web browser isn’t the only way to access web URLs - the curl command 
+can be used for this as well. We can do this by running the `curl` command with the
+URL as its argument from the terminal. 
 
