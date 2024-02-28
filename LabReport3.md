@@ -4,7 +4,7 @@ A failure-inducing input for the buggy program, as a JUnit test and any associat
 - JUnit test that results in failure
 
 `@Test
- public void testReversed() {  <br>
+ public void testReversed() {  <br />
    int[] input1 = {1, 2, 3};  <br>
    assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));  <br>
    assertArrayEquals(new int[]{1, 2, 3}, input1);  <br>
