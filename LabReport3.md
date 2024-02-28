@@ -25,7 +25,7 @@ static int[] reversed(int[] arr) {
 ```
 
 <br>
-An input that doesn't induce a failure, as a JUnit test and any associated code 
+An input that doesn't induce a failure, as a JUnit test and any associated code  
 - JUnit test that passes
 
 ```
