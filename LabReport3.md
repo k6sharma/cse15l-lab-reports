@@ -49,7 +49,7 @@ static int[] reversed(int[] arr) {
 
 <br>
 The symptom, as the output of running the tests:
-![Image](Tests.png)
+![Image](tests.png)
 
 
   
