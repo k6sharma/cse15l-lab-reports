@@ -91,6 +91,8 @@ Part 2:
 
 4 interesting options to use the `find` command:  
 
+  
+
 Option 1:` -mtime`  
 
 https://www.redhat.com/sysadmin/linux-find-command  
@@ -101,6 +103,7 @@ Example 1: Within the past 3 days
 
 Input
 `find . -mtime -3`  
+
 Output
 ```
 /~$llabus 19B 2024.docx
@@ -120,7 +123,8 @@ Output
 Example 2: Exactly 1 day ago  
 
 Input
-`find . -mtime 1`  
+`find . -mtime 1`   
+
 Output
 ```
 ./~$llabus 19B 2024.docx
@@ -133,19 +137,24 @@ Output
 ./Lecture 7 Section B.pdf
 ```
 
+  
 Option 2: `-name:`  
 
 Helps find files/directories with a specific name   
 
 Example 1: Finding a file  
 
-Input: `find ./Downloads -name "P3.3.docx"` 
+Input: `find ./Downloads -name "P3.3.docx"`  
+
 Output: `./Downloads/P3.3.docx`  
 
 Example 2: Finding a directory  
 
-Input: `find ./Downloads -name "wavelet"`  
+Input: `find ./Downloads -name "wavelet"`   
+
 Output: `./Downloads/wavelet`  
+
+  
 
 Option 3:` -type`  
 
@@ -153,7 +162,8 @@ Helps specify whether we want to find a file or a directory
 
 Example 1: Finding a file  
 
-Input: `find ./Downloads/week1Discussion-main-2 -type f`
+Input: `find ./Downloads/week1Discussion-main-2 -type f`  
+
 Output:
 ```
 ./Downloads/week1Discussion-main-2/DemoArrayImpl.java
@@ -167,13 +177,15 @@ Output:
 
 Example 2: Finding a directory   
 
-Input: `find ./Downloads/week1Discussion-main-2 -type d`
+Input: `find ./Downloads/week1Discussion-main-2 -type d`  
+
 Output: 
 ```
 ./Downloads/week1Discussion-main-2
 ./Downloads/week1Discussion-main-2/libs
 ```
 
+  
 Option 4:` -empty`.  
 
  https://www.redhat.com/sysadmin/linux-find-command  
@@ -182,7 +194,8 @@ Helps find empty files (can help declutter)
 
 Finding empty files
 Input
-`find ./Documents -empty`         
+`find ./Documents -empty`  
+
 Output
 ```
 ./Documents/.localized
@@ -193,7 +206,8 @@ Output
 ```
 When there's no empty files in the specified directory  
 
-Input: `find ./Downloads/week1Discussion-main -empty`
+Input: `find ./Downloads/week1Discussion-main -empty`  
+
 Output: No output (because no empty file found)  
 
 
