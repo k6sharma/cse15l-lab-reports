@@ -11,7 +11,7 @@ public void testReversed() {
   assertArrayEquals(new int[]{1, 2, 3}, input1);
 }
 ```
-
+<br>
 - The method (associated code)
 
 ```
