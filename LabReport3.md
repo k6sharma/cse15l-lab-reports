@@ -224,6 +224,7 @@ Consider the commands find. Find 4 interesting command-line options or alternate
 For example, we saw the -name option for find in class. For each of those options, give 2 examples of using
 it on files and directories from ./technical.  
 
+<br>
 Output:
 The `find` command is a powerful tool for searching files and directories recursively in a file system. 
 Here are four interesting command-line options for the `find` command along with examples of their usage 
@@ -281,6 +282,7 @@ on files and directories from the `./technical` directory:
    find ./technical -type f -size -100k
    ```
 
+<br>
 How I used and changed the output:   
 
 I ended up using the first two options(-type and -name) that ChatGPT gave me, and tried to use the examples it
