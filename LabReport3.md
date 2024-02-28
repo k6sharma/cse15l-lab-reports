@@ -101,7 +101,6 @@ Example 1: Within the past 3 days
 
 Input
 `find . -mtime -3`  
-
 Output
 ```
 /~$llabus 19B 2024.docx
@@ -118,9 +117,10 @@ Output
 ./Updated WA2 W24 data.xlsx
 ./Lecture 7 Section B.pdf
 ```
-Example 2: Exactly 1 day ago
+Example 2: Exactly 1 day ago  
+
 Input
-`find . -mtime 1`
+`find . -mtime 1`  
 Output
 ```
 ./~$llabus 19B 2024.docx
@@ -132,17 +132,27 @@ Output
 ./Bild 4 - Individual Writing Assignment -2.pdf
 ./Lecture 7 Section B.pdf
 ```
-Option 2: `-name:`
-Helps find files/directories with a specific name 
-Example 1: Finding a file
-Input: `find ./Downloads -name "P3.3.docx"`
-Output: `./Downloads/P3.3.docx`
-Example 2: Finding a directory
-Input: `find ./Downloads -name "wavelet"`
-Output: `./Downloads/wavelet`
-Option 3:` -type`
-Helps specify whether we want to find a file or a directory
-Example 1: Finding a file
+
+Option 2: `-name:`  
+
+Helps find files/directories with a specific name   
+
+Example 1: Finding a file  
+
+Input: `find ./Downloads -name "P3.3.docx"` 
+Output: `./Downloads/P3.3.docx`  
+
+Example 2: Finding a directory  
+
+Input: `find ./Downloads -name "wavelet"`  
+Output: `./Downloads/wavelet`  
+
+Option 3:` -type`  
+
+Helps specify whether we want to find a file or a directory  
+
+Example 1: Finding a file  
+
 Input: `find ./Downloads/week1Discussion-main-2 -type f`
 Output:
 ```
@@ -154,16 +164,22 @@ Output:
 ./Downloads/week1Discussion-main-2/README.md
 ./Downloads/week1Discussion-main-2/DemoArrayImplTester.java 
 ```
-Example 2: Finding a directory 
+
+Example 2: Finding a directory   
+
 Input: `find ./Downloads/week1Discussion-main-2 -type d`
 Output: 
 ```
 ./Downloads/week1Discussion-main-2
 ./Downloads/week1Discussion-main-2/libs
 ```
-Option 4:` -empty`.
- https://www.redhat.com/sysadmin/linux-find-command
-Helps find empty files (can help declutter)
+
+Option 4:` -empty`.  
+
+ https://www.redhat.com/sysadmin/linux-find-command  
+ 
+Helps find empty files (can help declutter)  
+
 Finding empty files
 Input
 `find ./Documents -empty`         
@@ -175,12 +191,16 @@ Output
 ./Documents/GitHub/lab3/.git/branches
 ./Documents/MATLAB
 ```
-When there's no empty files in the specified directory
-Input: `find ./Downloads/week1Discussion-main -empty`
-Output: No output (because no empty file found)
+When there's no empty files in the specified directory  
 
-ChatGPT Usage
-Input:
+Input: `find ./Downloads/week1Discussion-main -empty`
+Output: No output (because no empty file found)  
+
+
+ChatGPT Usage  
+
+Input:  
+
 Consider the commands find. Find 4 interesting command-line options or alternate ways to use the command. 
 For example, we saw the -name option for find in class. For each of those options, give 2 examples of using
 it on files and directories from ./technical.
@@ -241,6 +261,7 @@ on files and directories from the `./technical` directory:
    find ./technical -type f -size -100k
    ```
 
-How I used and changed the output: 
+How I used and changed the output:   
+
 I ended up using the first two options(-type and -name) that ChatGPT gave me, and tried to use the examples it
  gave me to create my own examples by experimenting with the command line on my own laptop. 
