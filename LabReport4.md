@@ -1,10 +1,10 @@
 Steps 4-9
 4. Log into ieng6
 ![Image](StepFour.png)
-
+<br>
 5. Clone your fork of the repository from your Github account (using the SSH URL)
 ![Image](StepFive.png)
-
+<br>
 7. Run the tests, demonstrating that they fail
 ![Image](StepSix.png)
 
