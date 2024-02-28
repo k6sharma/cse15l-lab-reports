@@ -137,7 +137,8 @@ Output
 ./Lecture 7 Section B.pdf
 ```
 
-  
+
+  <br>
 Option 2: `-name:`  
 
 Helps find files/directories with a specific name   
@@ -156,6 +157,7 @@ Output: `./Downloads/wavelet`
 
   
 
+<br>
 Option 3:` -type`  
 
 Helps specify whether we want to find a file or a directory  
@@ -185,7 +187,8 @@ Output:
 ./Downloads/week1Discussion-main-2/libs
 ```
 
-  
+
+  <br>
 Option 4:` -empty`.  
 
  https://www.redhat.com/sysadmin/linux-find-command  
@@ -211,13 +214,16 @@ Input: `find ./Downloads/week1Discussion-main -empty`
 Output: No output (because no empty file found)  
 
 
+<br>
+<br>
 ChatGPT Usage  
 
 Input:  
 
 Consider the commands find. Find 4 interesting command-line options or alternate ways to use the command. 
 For example, we saw the -name option for find in class. For each of those options, give 2 examples of using
-it on files and directories from ./technical.
+it on files and directories from ./technical.  
+
 Output:
 The `find` command is a powerful tool for searching files and directories recursively in a file system. 
 Here are four interesting command-line options for the `find` command along with examples of their usage 
