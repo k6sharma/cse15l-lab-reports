@@ -2,6 +2,7 @@ Part 1:
 
 A failure-inducing input for the buggy program, as a JUnit test and any associated code 
 - JUnit test that results in failure
+
 `@Test
  public void testReversed() {
    int[] input1 = {1, 2, 3};
