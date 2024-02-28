@@ -1,37 +1,69 @@
 Part 1: 
+
 A failure-inducing input for the buggy program, as a JUnit test and any associated code 
-(write it as a codeblock in Markdown)
-		public class ArrayTests {
-  @Test
-  public void testReverseInPlace(){
-    int[] input1 = {7, 8, 9};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{9, 8, 7}, input1);
-  }
+- JUnit test that results in failure
+`@Test
+ public void testReversed() {
+   int[] input1 = {1, 2, 3};
+   assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
+   assertArrayEquals(new int[]{1, 2, 3}, input1);
+ }`
+- The method (associated code)
+`static int[] reversed(int[] arr) {
+   int[] newArray = new int[arr.length];
+   for(int i = 0; i < arr.length; i += 1) {
+     arr[i] = newArray[arr.length - i - 1];
+   }
+   return arr;
+ }`
 
-  @Test
-  public void testReversed(){
-    int[] input1 = {7, 8, 9};
-    assertArrayEquals(new int[]{9, 8, 7}, ArrayExamples.reversed(input1));
-    assertArrayEquals(new int[]{7, 8, 9},input1);
-  }
-}
 An input that doesn't induce a failure, as a JUnit test and any associated code 
-(write it as a code block in Markdown)
-@Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
-	}
+- JUnit test that passes
+`@Test
+ public void testReversed2() {
+   int[] input1 = { };
+   assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+ }`
+- The method (associated code)
+`static int[] reversed(int[] arr) {
+   int[] newArray = new int[arr.length];
+   for(int i = 0; i < arr.length; i += 1) {
+     arr[i] = newArray[arr.length - i - 1];
+   }
+   return arr;
+ }`
+
+The symptom, as the output of running the tests
 
 
-  @Test
-  public void testReversed() {
-    int[] input1 = { };
-    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
-  }
-}
+The bug, as the before-and-after code change required to fix it (changed the fourth and sixth lines in the code block)
+- Before
+`static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }`
+- After
+`static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }`
+
+Why does this fix the issue?
+The error was that in the line `arr[i] = newArray[arr.length - i - 1];`, elements from `newArray` are being assigned to `arr`. 
+This means that `arr` is being modified instead of `newArray`. However, we want to do the opposite - we want to reverse the 
+elements of `arr` and store them in `newArray`. In addition, we had initialized `newArray` with default values (0), and its 
+elements are not modified in the loop. As a result, `arr` is also just being assigned zeros. After we correct the line to 
+`newArray[i] = arr[arr.length - i - 1];` , the reversed elements of `arr` are correctly assigned to `newArray`. In addition, 
+changing the return statement to `return newArray;` now returns the correct reversed array.
+
+
+
 Part 2:
 4 interesting options to use the `find` command:
 
