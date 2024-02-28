@@ -14,7 +14,7 @@ public void testReversed() {
 
 - The method (associated code)
 
-  ```
+```
 static int[] reversed(int[] arr) {
   int[] newArray = new int[arr.length];
   for(int i = 0; i < arr.length; i += 1) {
@@ -22,7 +22,6 @@ static int[] reversed(int[] arr) {
   }
   return arr;
 }
-```
 ```
 
 An input that doesn't induce a failure, as a JUnit test and any associated code 
