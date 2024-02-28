@@ -35,7 +35,6 @@ An input that doesn't induce a failure, as a JUnit test and any associated code 
    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
  }
 ```
-
 - The method (associated code)
 
 ```
@@ -76,7 +75,7 @@ static int[] reversed(int[] arr) {
 ```
 
 
-  
+<br>
 Why does this fix the issue?  
 
 The error was that in the line `arr[i] = newArray[arr.length - i - 1];`, elements from `newArray` are being assigned to `arr`. 
