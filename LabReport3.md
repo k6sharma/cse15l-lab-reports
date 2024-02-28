@@ -8,7 +8,7 @@ A failure-inducing input for the buggy program, as a JUnit test and any associat
    int[] input1 = {1, 2, 3};
    assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
    assertArrayEquals(new int[]{1, 2, 3}, input1);
- }`
+   }`
 - The method (associated code)
 `static int[] reversed(int[] arr) {
    int[] newArray = new int[arr.length];
