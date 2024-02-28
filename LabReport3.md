@@ -52,6 +52,7 @@ static int[] reversed(int[] arr) {
 The symptom, as the output of running the tests
 
 
+  
 The bug, as the before-and-after code change required to fix it (changed the fourth and sixth lines in the code block)
 - Before
 ```
@@ -75,6 +76,7 @@ static int[] reversed(int[] arr) {
 ```
 
 
+  
 Why does this fix the issue?  
 
 The error was that in the line `arr[i] = newArray[arr.length - i - 1];`, elements from `newArray` are being assigned to `arr`. 
