@@ -52,7 +52,6 @@ static int[] reversed(int[] arr) {
 The symptom, as the output of running the tests
 
 
-<br>
 The bug, as the before-and-after code change required to fix it (changed the fourth and sixth lines in the code block)
 - Before
 ```
@@ -75,8 +74,9 @@ static int[] reversed(int[] arr) {
   }
 ```
 
-<br>
-Why does this fix the issue?
+
+Why does this fix the issue?  
+
 The error was that in the line `arr[i] = newArray[arr.length - i - 1];`, elements from `newArray` are being assigned to `arr`. 
 This means that `arr` is being modified instead of `newArray`. However, we want to do the opposite - we want to reverse the 
 elements of `arr` and store them in `newArray`. In addition, we had initialized `newArray` with default values (0), and its 
