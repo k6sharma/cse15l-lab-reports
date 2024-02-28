@@ -218,9 +218,7 @@ Output: No output (because no empty file found)
 <br>
 ChatGPT Usage  
 
-Input:  
-
-Consider the commands find. Find 4 interesting command-line options or alternate ways to use the command. 
+Input: Consider the commands find. Find 4 interesting command-line options or alternate ways to use the command. 
 For example, we saw the -name option for find in class. For each of those options, give 2 examples of using
 it on files and directories from ./technical.  
 
