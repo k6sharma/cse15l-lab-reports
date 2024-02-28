@@ -11,21 +11,18 @@ public void testReversed() {
   assertArrayEquals(new int[]{1, 2, 3}, input1);
 }
 ```
+
 - The method (associated code)
   
-`static int[] reversed(int[] arr) {`
-
-   `int[] newArray = new int[arr.length];`
-   
-   `for(int i = 0; i < arr.length; i += 1) {`
-   
-     `arr[i] = newArray[arr.length - i - 1];`
-     
-   `}`
-   
-   `return arr;`
-   
- `}`
+  ```
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = newArray[arr.length - i - 1];
+  }
+  return arr;
+}
+ ```
 
 An input that doesn't induce a failure, as a JUnit test and any associated code 
 - JUnit test that passes
