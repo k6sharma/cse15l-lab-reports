@@ -87,14 +87,21 @@ changing the return statement to `return newArray;` now returns the correct reve
 
 
 
-Part 2:
-4 interesting options to use the `find` command:
-Option 1:` -mtime`
-https://www.redhat.com/sysadmin/linux-find-command
-This command helps find files by age/time of modification. 
-Example 1: Within the past 3 days
+Part 2:  
+
+4 interesting options to use the `find` command:  
+
+Option 1:` -mtime`  
+
+https://www.redhat.com/sysadmin/linux-find-command  
+
+This command helps find files by age/time of modification.   
+
+Example 1: Within the past 3 days  
+
 Input
-`find . -mtime -3`
+`find . -mtime -3`  
+
 Output
 ```
 /~$llabus 19B 2024.docx
