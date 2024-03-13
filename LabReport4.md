@@ -16,19 +16,28 @@ Press <enter>
 
 7. type `vim lab7`
 Scroll down to ListExamples (5 `j` keypresses)
-<ENTER>
-Use `j` to scroll down to line 44 (44 `j`)
-Use `l` to scroll right so the cursor hovers over the `2` in `index2` (11 `l`)
-press `x` to delete the `2`
-Press `i` to enter insert mode
-Type `2`
-Then type <ESC> to go back to normal mode
-Type `:wq` to save and exit vim
+
+<ENTER>  
+  
+Use `j` to scroll down to line 44 (44 `j`)  
+
+Use `l` to scroll right so the cursor hovers over the `2` in `index2` (11 `l`)  
+
+press `x` to delete the `2`  
+
+Press `i` to enter insert mode  
+
+Type `2`  
+
+Then type <ESC> to go back to normal mode  
+
+Type `:wq` to save and exit vim  
+
 ![Image](StepSevenFR.png)
 
-8. Keys pressed: <up><up><enter> The “bash test.sh” command was 2 up in the search history so I used the up arrow to access and run it.
+9. Keys pressed: <up><up><enter> The “bash test.sh” command was 2 up in the search history so I used the up arrow to access and run it.
 
-9. Wrote:
+10. Wrote:
 git commit -m "all done!"
 git push origin lab7
 
