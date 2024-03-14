@@ -8,8 +8,9 @@ I'm working on my array reversal method, and I keep running into multiple index 
 
 
 
-Response from TA:  
 
+    
+Response from TA:  
 Hey there,  
 
 Thank you for reaching out and providing detailed information about the issue you're encountering with your array reversal method. From the screenshots and descriptions you've shared, it seems like there's a problem with the way the program is handling the array indices.  
