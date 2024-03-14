@@ -1,5 +1,4 @@
 Student post:  
-
 Hey everyone,  
 I'm working on my array reversal method, and I keep running into multiple index out of bounds exceptions when I run my bash file (tests.sh). I’m not sure how to fix it, but my guess is that I might have messed up one of my for-loops? I’ve attached screenshots below of both my files (I have a java file with the array reversal method and a bash file with my tests) so you can see what I’m talking about and can hopefully help troubleshoot. Any help would be appreciated!  
 
