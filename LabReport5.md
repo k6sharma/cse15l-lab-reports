@@ -11,13 +11,11 @@ I'm working on my array reversal method, and I keep running into multiple index 
 
     
 
+
 Response from TA:  
 Hey there,  
-
 Thank you for reaching out and providing detailed information about the issue you're encountering with your array reversal method. From the screenshots and descriptions you've shared, it seems like there's a problem with the way the program is handling the array indices.  
-
 To troubleshoot this issue, could you try checking the loop conditions in your Java file? Specifically, take a closer look at the loop that prints the reversed array. Pay attention to the loop variable and the termination condition.  
-
 Feel free to give that a try and let me know if you make any progress!  
 
 
