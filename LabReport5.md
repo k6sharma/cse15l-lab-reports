@@ -22,7 +22,7 @@ Feel free to give that a try and let me know if you make any progress!
 
 How the student fixed it:  
 The feedback made the student look closer at the loop that prints the reversed array. The loop condition checks if `i` is less than or equal to the size of the array, which leads to an index out of bounds exception when `i = array.size`. This happens due to arrays being 0-indexed. For example, if an array size is 7, then the `i` values would be 0 1 2 3 4 5 6. Notice how there is no `i = 7` in an array of size 7. This means that the i cannot equal `array.size`, it must be less. Since the loop condition was formerly  `i <= array.size()`, it causes the program to attempt to access an element beyond the bounds of the array, resulting in the IndexOutOfBoundsException. To fix this bug, the loop condition needs to be modified to `i < array.size()`. As you can see, the tests passed (with the command bash test.sh) after this correction:
-![Image](Yaystudent.png)  
+![Image](StudentSucess.png)  
 
 
 Reflection:
